@@ -16,9 +16,31 @@
 
 package com.io7m.jfsm.core;
 
+/**
+ * The type of builders for mutable enum-based finite state machines.
+ *
+ * @param <T>
+ */
+
 public interface FSMEnumMutableBuilderType<T extends Enum<T>>
 {
-  FSMEnumMutableBuilderType<T> addTransition(T from, T to);
+  /**
+   * Add a transition from state {@code from} to state {@code to}.
+   *
+   * @param from The starting state
+   * @param to   The target state
+   *
+   * @return This builder
+   */
+
+  FSMEnumMutableBuilderType<T> addTransition(
+    T from,
+    T to);
+
+  /**
+   * @return A new finite state machine based on all of the parameters given so
+   * far
+   */
 
   FSMEnumMutable<T> build();
 }

@@ -40,6 +40,15 @@ public final class FSMEnumMutable<T extends Enum<T>>
     this.current = NullCheck.notNull(initial, "Initial");
   }
 
+  /**
+   * Create a new builder.
+   *
+   * @param init The initial state
+   * @param <T>  The type of states
+   *
+   * @return A new builder
+   */
+
   public static <T extends Enum<T>> FSMEnumMutableBuilderType<T> builder(
     final T init)
   {

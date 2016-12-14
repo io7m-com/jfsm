@@ -16,8 +16,19 @@
 
 package com.io7m.jfsm.core;
 
+/**
+ * An exception indicating an attempt to perform a transition that is not
+ * permitted.
+ */
+
 public final class FSMTransitionException extends RuntimeException
 {
+  /**
+   * Construct an exception.
+   *
+   * @param message The message
+   */
+
   public FSMTransitionException(final String message)
   {
     super(message);
