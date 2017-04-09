@@ -7,13 +7,13 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.io7m.jfsm</groupId>
-    <artifactId>io7m-jfsm</artifactId>
-    <version>0.1.0</version>
+    <artifactId>com.io7m.jfsm</artifactId>
+    <version>0.1.1</version>
   </parent>
-  <artifactId>io7m-jfsm-core</artifactId>
+  <artifactId>com.io7m.jfsm.core</artifactId>
 
   <packaging>bundle</packaging>
-  <name>io7m-jfsm-core</name>
+  <name>com.io7m.jfsm.core</name>
   <description>Finite state machines (Core)</description>
   <url>http://io7m.github.io/jfsm/</url>
 
@@ -26,7 +26,7 @@
   <dependencies>
     <dependency>
       <groupId>com.io7m.jnull</groupId>
-      <artifactId>io7m-jnull-core</artifactId>
+      <artifactId>com.io7m.jnull.core</artifactId>
     </dependency>
 
     <dependency>
