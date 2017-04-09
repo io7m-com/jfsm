@@ -1,4 +1,4 @@
-[document [title io7m-jfsm 0.1.0 Documentation]
+[document [title com.io7m.jfsm 0.1.1 Documentation]
   [import "pkg.sdi"]
   [import "api.sd"]]
 
