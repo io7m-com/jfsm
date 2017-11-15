@@ -16,7 +16,7 @@
 
 package com.io7m.jfsm.core;
 
-import com.io7m.jnull.NullCheck;
+import java.util.Objects;
 
 import java.util.EnumMap;
 import java.util.EnumSet;
@@ -36,8 +36,8 @@ public final class FSMEnumMutable<T extends Enum<T>>
     final EnumMap<T, EnumSet<T>> in_map,
     final T initial)
   {
-    this.map = NullCheck.notNull(in_map, "Map");
-    this.current = NullCheck.notNull(initial, "Initial");
+    this.map = Objects.requireNonNull(in_map, "Map");
+    this.current = Objects.requireNonNull(initial, "Initial");
   }
 
   /**
@@ -52,7 +52,7 @@ public final class FSMEnumMutable<T extends Enum<T>>
   public static <T extends Enum<T>> FSMEnumMutableBuilderType<T> builder(
     final T init)
   {
-    return new Builder<>(NullCheck.notNull(init, "Initial"));
+    return new Builder<>(Objects.requireNonNull(init, "Initial"));
   }
 
   /**
@@ -77,7 +77,7 @@ public final class FSMEnumMutable<T extends Enum<T>>
     final T state)
     throws FSMTransitionException
   {
-    NullCheck.notNull(state, "state");
+    Objects.requireNonNull(state, "state");
 
     if (this.map.containsKey(this.current)) {
       final EnumSet<T> nexts = this.map.get(this.current);
@@ -109,7 +109,7 @@ public final class FSMEnumMutable<T extends Enum<T>>
       final T in_initial)
     {
       this.map = new EnumMap<>(in_initial.getDeclaringClass());
-      this.initial = NullCheck.notNull(in_initial, "Initial");
+      this.initial = Objects.requireNonNull(in_initial, "Initial");
     }
 
     @Override
@@ -117,8 +117,8 @@ public final class FSMEnumMutable<T extends Enum<T>>
       final T from,
       final T to)
     {
-      NullCheck.notNull(from, "From");
-      NullCheck.notNull(to, "To");
+      Objects.requireNonNull(from, "From");
+      Objects.requireNonNull(to, "To");
 
       final EnumSet<T> set_to;
       if (this.map.containsKey(from)) {
