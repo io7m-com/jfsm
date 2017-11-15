@@ -93,14 +93,14 @@
   <build>
     <pluginManagement>
       <plugins>
-        <!-- Require JDK >= 1.8 -->
+        <!-- Require JDK >= 9 -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
-            <optimize>true</optimize>
+            <source>9</source>
+            <target>9</target>
+            <release>9</release>
           </configuration>
         </plugin>
 
@@ -112,6 +112,15 @@
         </plugin>
       </plugins>
     </pluginManagement>
+
+    <plugins>
+      <!-- Generate a site -->
+      <plugin>
+        <groupId>com.io7m.minisite</groupId>
+        <artifactId>com.io7m.minisite.maven_plugin</artifactId>
+        <inherited>false</inherited>
+      </plugin>
+    </plugins>
   </build>
 
 </project>
