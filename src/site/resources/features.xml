@@ -6,5 +6,6 @@
     <li>ISC license.</li>
     <li>Automated test suite with 100% coverage.</li>
     <li><a href="https://www.osgi.org/">OSGi</a>-ready.</li>
+    <li><a href="https://en.wikipedia.org/wiki/Java_Platform_Module_System">JPMS</a>-ready</li>
   </ul>
 </div>
