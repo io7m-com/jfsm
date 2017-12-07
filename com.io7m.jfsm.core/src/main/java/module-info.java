@@ -15,8 +15,10 @@
  */
 
 /**
- * Core types and functions.
+ * Finite state machines (Core)
  */
 
-package com.io7m.jfsm.core;
-
+module com.io7m.jfsm.core
+{
+  exports com.io7m.jfsm.core;
+}

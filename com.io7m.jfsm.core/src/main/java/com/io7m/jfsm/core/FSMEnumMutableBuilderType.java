@@ -19,7 +19,7 @@ package com.io7m.jfsm.core;
 /**
  * The type of builders for mutable enum-based finite state machines.
  *
- * @param <T>
+ * @param <T> The type of state values
  */
 
 public interface FSMEnumMutableBuilderType<T extends Enum<T>>
