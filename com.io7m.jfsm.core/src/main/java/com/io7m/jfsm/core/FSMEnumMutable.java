@@ -87,15 +87,16 @@ public final class FSMEnumMutable<T extends Enum<T>>
       }
     }
 
+    final String separator = System.lineSeparator();
     final StringBuilder sb = new StringBuilder(128);
     sb.append("Cannot transition between the given states.");
-    sb.append(System.lineSeparator());
+    sb.append(separator);
     sb.append("  Current state:   ");
     sb.append(this.current);
-    sb.append(System.lineSeparator());
+    sb.append(separator);
     sb.append("  Requested state: ");
     sb.append(state);
-    sb.append(System.lineSeparator());
+    sb.append(separator);
     throw new FSMTransitionException(sb.toString());
   }
 

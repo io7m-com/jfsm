@@ -8,12 +8,12 @@
   <parent>
     <groupId>com.io7m.primogenitor</groupId>
     <artifactId>com.io7m.primogenitor</artifactId>
-    <version>2.0.0</version>
+    <version>3.0.0-beta0004</version>
   </parent>
 
   <groupId>com.io7m.jfsm</groupId>
   <artifactId>com.io7m.jfsm</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.jfsm</name>
@@ -21,15 +21,12 @@
   <url>http://github.com/io7m/jfsm</url>
 
   <modules>
-    <module>com.io7m.jfsm.checkstyle</module>
     <module>com.io7m.jfsm.core</module>
     <module>com.io7m.jfsm.documentation</module>
   </modules>
 
   <properties>
-    <io7m.checkstyle.artifact>com.io7m.jfsm.checkstyle</io7m.checkstyle.artifact>
-    <io7m.checkstyle.path>/com/io7m/jfsm/checkstyle/checkstyle.xml</io7m.checkstyle.path>
-    <io7m.api.previousVersion>0.1.1</io7m.api.previousVersion>
+    <io7m.api.previousVersion>1.0.0</io7m.api.previousVersion>
   </properties>
 
   <licenses>
@@ -109,6 +106,15 @@
           <groupId>com.io7m.kstructural</groupId>
           <artifactId>io7m-kstructural-maven-plugin</artifactId>
           <version>0.3.1</version>
+        </plugin>
+
+        <!-- Spot bugs -->
+        <plugin>
+          <groupId>com.github.spotbugs</groupId>
+          <artifactId>spotbugs-maven-plugin</artifactId>
+          <configuration>
+            <excludeFilterFile>spotbugs-filter.xml</excludeFilterFile>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
