@@ -7,6 +7,4 @@ jfsm
 [![Codacy grade](https://img.shields.io/codacy/grade/1df15a69818d416a842e80d61b33e603.png?style=flat-square)](https://www.codacy.com/app/github_79/jfsm)
 [![Codecov](https://img.shields.io/codecov/c/github/io7m/jfsm.png?style=flat-square)](https://codecov.io/gh/io7m/jfsm)
 
-See https://io7m.github.io/jfsm/ for more information.
-
 ![jfsm](./src/site/resources/jfsm.jpg?raw=true)
