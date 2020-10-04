@@ -8,10 +8,6 @@
          <img src="https://img.shields.io/maven-central/v/com.io7m.jfsm/com.io7m.jfsm.png?style=flat-square"
               alt="Maven Central"/>
       </a>
-      <a href="https://www.codacy.com/app/github_79/jfsm">
-         <img src="https://img.shields.io/codacy/grade/1df15a69818d416a842e80d61b33e603.png?style=flat-square"
-              alt="Codacy"/>
-      </a>
       <a href="https://codecov.io/gh/io7m/jfsm">
          <img src="https://img.shields.io/codecov/c/github/io7m/jfsm.png?style=flat-square"
               alt="Codecov"/>
