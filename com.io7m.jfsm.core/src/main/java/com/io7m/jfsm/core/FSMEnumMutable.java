@@ -1,5 +1,5 @@
 /*
- * Copyright © 2016 <code@io7m.com> http://io7m.com
+ * Copyright © 2016 Mark Raynsford <code@io7m.com> https://www.io7m.com
  *
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -87,15 +87,16 @@ public final class FSMEnumMutable<T extends Enum<T>>
       }
     }
 
+    final String separator = System.lineSeparator();
     final StringBuilder sb = new StringBuilder(128);
     sb.append("Cannot transition between the given states.");
-    sb.append(System.lineSeparator());
+    sb.append(separator);
     sb.append("  Current state:   ");
     sb.append(this.current);
-    sb.append(System.lineSeparator());
+    sb.append(separator);
     sb.append("  Requested state: ");
     sb.append(state);
-    sb.append(System.lineSeparator());
+    sb.append(separator);
     throw new FSMTransitionException(sb.toString());
   }
 
