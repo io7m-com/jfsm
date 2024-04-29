@@ -11,14 +11,26 @@
     <artifactId>com.io7m.jfsm</artifactId>
     <version>2.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>com.io7m.jfsm.core</artifactId>
+  <artifactId>com.io7m.jfsm.tests</artifactId>
 
   <packaging>jar</packaging>
-  <name>com.io7m.jfsm.core</name>
-  <description>Finite state machines (Core)</description>
+  <name>com.io7m.jfsm.tests</name>
+  <description>Finite state machines (Test suite)</description>
   <url>https://www.io7m.com/software/jfsm</url>
 
+  <properties>
+    <spotbugs.skip>true</spotbugs.skip>
+    <mdep.analyze.skip>true</mdep.analyze.skip>
+    <checkstyle.skip>true</checkstyle.skip>
+  </properties>
+
   <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>com.io7m.jfsm.core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
     <dependency>
       <groupId>org.osgi</groupId>
       <artifactId>org.osgi.annotation.versioning</artifactId>
@@ -29,6 +41,21 @@
       <artifactId>org.osgi.annotation.bundle</artifactId>
       <scope>provided</scope>
     </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Determine test coverage -->
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
