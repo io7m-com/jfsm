@@ -14,7 +14,7 @@ The `jfsm` package provides implementations of finite state machines.
 
 ## Usage
 
-Declare on a type that will be used to represent the states of the FSM.
+Declare a type that will be used to represent the states of the FSM.
 An `enum` type or a `sealed` hierarchy is a good choice.
 
 ```
