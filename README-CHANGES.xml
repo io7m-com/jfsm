@@ -16,13 +16,18 @@
         <c:change compatible="false" date="2017-11-15T00:00:00+00:00" summary="All modules are now Java 9 modules. JDK 9 is now required."/>
       </c:changes>
     </c:release>
-    <c:release date="2022-04-09T18:37:00+00:00" is-open="false" ticket-system="com.github.io7m.jfsm" version="2.0.0">
+    <c:release date="2022-04-09T00:00:00+00:00" is-open="false" ticket-system="com.github.io7m.jfsm" version="2.0.0">
       <c:changes>
         <c:change compatible="false" date="2022-04-09T00:00:00+00:00" summary="Require JDK 17"/>
       </c:changes>
     </c:release>
+    <c:release date="2024-05-11T17:01:46+00:00" is-open="false" ticket-system="com.github.io7m.jfsm" version="2.0.1">
+      <c:changes>
+        <c:change date="2024-05-11T00:00:00+00:00" summary="Move to new organization."/>
+      </c:changes>
+    </c:release>
   </c:releases>
   <c:ticket-systems>
-    <c:ticket-system default="true" id="com.github.io7m.jfsm" url="https://github.com/io7m/jfsm/issues/"/>
+    <c:ticket-system default="true" id="com.github.io7m.jfsm" url="https://www.github.com/io7m-com/jfsm/issues/"/>
   </c:ticket-systems>
 </c:changelog>
