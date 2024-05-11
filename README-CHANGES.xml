@@ -21,9 +21,9 @@
         <c:change compatible="false" date="2022-04-09T00:00:00+00:00" summary="Require JDK 17"/>
       </c:changes>
     </c:release>
-    <c:release date="2024-05-11T16:52:05+00:00" is-open="true" ticket-system="com.github.io7m.jfsm" version="2.0.1">
+    <c:release date="2024-05-11T17:01:46+00:00" is-open="false" ticket-system="com.github.io7m.jfsm" version="2.0.1">
       <c:changes>
-        <c:change date="2024-05-11T16:52:05+00:00" summary="Move to new organization."/>
+        <c:change date="2024-05-11T00:00:00+00:00" summary="Move to new organization."/>
       </c:changes>
     </c:release>
   </c:releases>
