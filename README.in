@@ -6,10 +6,10 @@ The `jfsm` package provides implementations of finite state machines.
 ## Features
 
 * Mutable enum-based finite state machines.
-* Written in pure Java 21.
+* Written in pure Java 17.
 * High coverage test suite.
-* [OSGi-ready](https://www.osgi.org/)
-* [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System)
+* [OSGi-ready](https://www.osgi.org/).
+* [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System).
 * ISC license.
 
 ## Usage

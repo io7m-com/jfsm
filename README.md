@@ -4,7 +4,7 @@ jfsm
 [![Maven Central](https://img.shields.io/maven-central/v/com.io7m.jfsm/com.io7m.jfsm.svg?style=flat-square)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.io7m.jfsm%22)
 [![Maven Central (snapshot)](https://img.shields.io/nexus/s/com.io7m.jfsm/com.io7m.jfsm?server=https%3A%2F%2Fs01.oss.sonatype.org&style=flat-square)](https://s01.oss.sonatype.org/content/repositories/snapshots/com/io7m/jfsm/)
 [![Codecov](https://img.shields.io/codecov/c/github/io7m-com/jfsm.svg?style=flat-square)](https://codecov.io/gh/io7m-com/jfsm)
-![Java Version](https://img.shields.io/badge/21-java?label=java&color=e6c35c)
+![Java Version](https://img.shields.io/badge/17-java?label=java&color=e65cc3)
 
 ![com.io7m.jfsm](./src/site/resources/jfsm.jpg?raw=true)
 
@@ -22,7 +22,7 @@ The `jfsm` package provides implementations of finite state machines.
 ## Features
 
 * Mutable enum-based finite state machines.
-* Written in pure Java 21.
+* Written in pure Java 17.
 * High coverage test suite.
 * [OSGi-ready](https://www.osgi.org/)
 * [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System)
